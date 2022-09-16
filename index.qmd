@@ -1,0 +1,112 @@
+---
+title: DSC 3101- Advanced Statistics Applications II
+subtitle: "Work in R projects with GitHub"
+author: Prof. P. Wijekoon
+institute: Department of Statistics and Computer Science 
+format: 
+  revealjs:
+      large: true
+      theme: [beige, custom.scss]
+      slide-number: true
+      chalkboard: 
+        theme: whiteboard
+      
+editor: visual
+
+---
+
+# **Why GitHub?**
+
+-   GitHub is the cloud version of the version control Git, which allows you to push and pull your files and collaborate with others.
+
+-   If you work with [Overleaf](https://www.overleaf.com/), you can also [link your Github account to your Overleaf project](https://www.overleaf.com/learn/how-to/How_do_I_connect_an_Overleaf_project_with_a_repo_on_GitHub,_GitLab_or_BitBucket%3F) easily.
+
+-   Also, when working with R Studio you can link your R projects to Github easily.
+
+-   To work with GitHub, first you have to install `Git` in your computer.
+
+-   Go to [`Git website`](https://www.git-scm.com/), download `Git`, and install.
+
+# **Create a New Repository on Github**
+
+-   [Sign up](https://github.com/) for a GitHub account if you don't have one.
+
+-   Click the "+".
+
+-   Select "New repository".
+
+-   Then, fill the below form by giving a name for your repository, select whether it's private or public, and then you can initialize a README file. Using README file you can add some information about your repository. An example of a README file is given -- here is [here](https://github.com/cosimameyer/conflict-elections).
+
+-   Next, click "Create repository", and copy the URL. You need this URL to connect your R project with GitHub.
+
+# Here is the form
+
+![](images/fig1.png)
+
+# Connect R Studio Project
+
+-   Create a New Project as below:
+
+    Click on "File \> New Project ... \> Version Control \> Git"
+
+-   Now, paste the GitHub URL that you copied earlier to "Repository URL", and give the folder name that you want to create your R project. Click, "Create Project".
+
+-   Then, a directory with the same name linked to the GitHub repository will be automatically created in the relevant folder of your computer.
+
+# Git Panel in R project
+
+::: columns
+::: {.column width="50%"}
+-   Now, you can see the `Git` panel in your R project.
+
+-   If you make changes in your files, they will show up.
+
+-   To sync them with Github, check all files that you want to sync and hit **Commit**, and add a meaningful commit message.
+:::
+
+::: {.column width="50%"}
+![](images/fig2.png)
+:::
+:::
+
+# Example
+
+-   Create .Rmd or .qmd file and save it as test.
+
+-   Click `Git` panel, and select `Diff` as below, or just click `CTRL+ALT+D`.
+
+    ![](images/fig3.png)
+
+# Example
+
+-   Now, the following window will be opened.
+
+-   Check the box of the file that you want to upload to the GitHub repository, and add a commit message as shown in the figure, and hit "`Commit`". Then, click "`push`" to push it to your Github.
+
+    ![](images/fig4.png)
+
+# Example
+
+-   Now, the test file is visible in your GitHub repository.
+
+-   If you make any changes in your files on Github and then you want to get the updated versions, hit "pull" to get all changes.
+
+-   It is a good practise to set up essential folders before starting your work. Create three folders as "data", "Rcodes", and "images". Under " data" folder, create two sub folders called "raw" and "processed".
+
+-   Put your raw data in the "raw" folder, and cleaned data in the "processed" folder.
+
+# References
+
+-   [How to structure your data workflow efficiently using R](https://cosimameyer.com/post/how-to-structure-your-data-workflow-efficiently-using-r/).
+
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html).
+
+-   [Git web site](https://www.git-scm.com/).
+
+-   [GitHub web site](https://github.com/)
+
+-   [Git and GitHub.com cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+-   [Git Reference Manual](https://git-scm.com/docs)
+
+-   [Git Overview Book](https://git-scm.com/book/en/v2)
